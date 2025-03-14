@@ -1,0 +1,30 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hove-scroll-bar {
+  overflow: hidden;
+
+  &:hover {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      background-color: #fff;
+    }
+
+    /*滚动条中间滑动部分*/
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 128, 0, 0.2);
+    }
+  }
+}
